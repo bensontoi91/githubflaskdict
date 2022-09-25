@@ -10,11 +10,8 @@ api_token = ''
 def get_api_dictionary_response(word) -> dict:
     base_url= 'https://owlbot.info/api/v4/dictionary/'
 
-    # headers={
-    # 'Authorization':"Token "+ os.getenv('OWL_BOT_AUTH')
-    # }
     headers={
-    'Authorization':"Token "+ 'df4f180f13f8e9ab823909888384d9e7d1d265f9'
+    'Authorization':"Token "+ os.getenv('OWL_BOT_AUTH')
     }
 
     url = f'{base_url}{word}'
